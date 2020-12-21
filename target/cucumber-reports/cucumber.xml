@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="31.785">
+    <testcase classname="Sale link validation" name="_2" time="31.055">
+        <system-out><![CDATA[Given user Lauch the application url "BaseUrl" and verfiy page title........passed
+And user hover on sale link from menu bar...................................passed
+Then user validate the submenu name and click link validation...............passed
+]]></system-out>
+    </testcase>
+</testsuite>
