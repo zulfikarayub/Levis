@@ -1,16 +1,18 @@
-package cucumber;
+package utilities;
 
 import org.openqa.selenium.WebDriver;
 
-public class TestContext {
+public abstract class Driver {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     public WebDriver getDriver() {
-        return driver;
+        return this.driver;
     }
 
     public void setDriver(WebDriver driver) {
+
         this.driver = driver;
+
     }
 }
