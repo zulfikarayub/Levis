@@ -13,10 +13,10 @@ import utilities.BaseClass;
 import java.util.List;
 
 
-public class zeroBank_pageObject extends BaseClass {
+public class automationpractice_pageObject extends BaseClass {
 
 
-    public static Logger log = LogManager.getLogger(zeroBank_pageObject.class);
+    public static Logger log = LogManager.getLogger(pages.zeroBank_pageObject.class);
 
     @FindBy(xpath = "//div[@id='nav']//li")
     public List<WebElement> homePageNavBarList;
@@ -61,7 +61,7 @@ public class zeroBank_pageObject extends BaseClass {
     public WebElement feedBackThankYouNote;
 
 
-    public zeroBank_pageObject(WebDriver driver) {
+    public automationpractice_pageObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
@@ -239,7 +239,7 @@ public class zeroBank_pageObject extends BaseClass {
         try {
             feedBackSendMessageButton.click();
             waitForVisibility(feedBackHeader, 5);
-            Assert.assertEquals(feedBackHeader.getText().trim(),"Feedback");
+            Assert.assertEquals(feedBackHeader.getText().trim(), "Feedback");
             Assert.assertTrue(!feedBackThankYouNote.getText().trim().isEmpty());
             log.info(feedBackThankYouNote.getText().trim());
         } catch (Exception e) {

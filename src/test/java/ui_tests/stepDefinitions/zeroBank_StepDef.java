@@ -56,6 +56,11 @@ public class zeroBank_StepDef extends BaseClass {
     public void verfiy_email_field_validation() {
         zeroBank_pageObject.feedBackFormEmailValidation();
     }
+
+    @Then("verfiy pixel validation")
+    public void verfiy_pixel() {
+        zeroBank_pageObject.verfiy_pixel();
+    }
     @Given("verify subject field validation")
     public void verify_subject_field_validation() {
         zeroBank_pageObject.feedBackForSubjectValidation();
