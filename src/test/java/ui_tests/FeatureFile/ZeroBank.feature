@@ -31,6 +31,7 @@ Feature: Zero bank header functionality
 
     Given User launch the URL '<URL>' successfully
     And verify page title
+    And verfiy pixel validation
     When click on feedback tab
     And verify name field validation
     And verfiy email field validation
